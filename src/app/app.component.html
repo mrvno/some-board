@@ -1,2 +1,167 @@
-<router-outlet></router-outlet>
+<router-outlet> </router-outlet>
 
+<mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+
+<mat-tab-group
+  #tabGroup
+  mat-align-tabs="center"
+  (selectedTabChange)="tabChanged($event)"
+>
+  <mat-tab label="📖">
+    <div class="narrow">
+      <mat-card>
+        <mat-list>
+          <mat-list-item>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >navigate_next</mat-icon
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >navigate_next</mat-icon
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >navigate_next</mat-icon
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >navigate_next</mat-icon
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea
+          </mat-list-item>
+        </mat-list>
+      </mat-card>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="📣">
+    <div class="wide" style="height: 900px;">
+      <mat-grid-list cols="2" rowHeight="72%">
+        <mat-grid-tile>
+          <pre><code [highlight]="code"></code></pre>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <mat-card>
+            <mat-list>
+              <mat-list-item>
+                <mat-icon aria-hidden="false" aria-label="Example home icon"
+                  >navigate_next</mat-icon
+                >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos
+              </mat-list-item>
+              <mat-list-item>
+                <mat-icon aria-hidden="false" aria-label="Example home icon"
+                  >navigate_next</mat-icon
+                >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus
+              </mat-list-item>
+              <mat-list-item>
+                <mat-icon aria-hidden="false" aria-label="Example home icon"
+                  >navigate_next</mat-icon
+                >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea
+              </mat-list-item>
+            </mat-list>
+          </mat-card>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <pre><code [highlight]="code"></code></pre>
+        </mat-grid-tile>
+
+        <mat-grid-tile>
+          <mat-card>
+            <mat-list>
+              <mat-list-item>
+                <mat-icon aria-hidden="false" aria-label="Example home icon"
+                  >navigate_next</mat-icon
+                >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos
+              </mat-list-item>
+              <mat-list-item>
+                <mat-icon aria-hidden="false" aria-label="Example home icon"
+                  >navigate_next</mat-icon
+                >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus
+              </mat-list-item>
+              <mat-list-item>
+                <mat-icon aria-hidden="false" aria-label="Example home icon"
+                  >navigate_next</mat-icon
+                >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea
+              </mat-list-item>
+            </mat-list>
+          </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </mat-tab>
+  <mat-tab label="🧱"> Content 2 </mat-tab>
+  <mat-tab label="🔧"> Content 3 </mat-tab>
+  <mat-tab label="🎁"> Content 3 </mat-tab>
+  <mat-tab label="🔥">
+    <div class="narrow">
+      <mat-card>
+        <mat-list>
+          <mat-list-item>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >navigate_next</mat-icon
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >navigate_next</mat-icon
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >navigate_next</mat-icon
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea
+          </mat-list-item>
+          <mat-list-item>
+            <mat-icon aria-hidden="false" aria-label="Example home icon"
+              >navigate_next</mat-icon
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea
+          </mat-list-item>
+        </mat-list>
+      </mat-card>
+    </div>
+  </mat-tab>
+</mat-tab-group>
